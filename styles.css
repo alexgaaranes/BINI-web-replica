@@ -53,7 +53,7 @@ section#group {
 }
 
 h2 {
-    font-size: 180%;
+    font-size: 250%;
     color: rgb(191, 64, 109);
     font-family: 'Brush Script MT', cursive;
     text-align: center;
@@ -129,30 +129,36 @@ section#memb_showcase > div > img {
     border-radius: 5%;
     transform: rotate(7deg);
     display: inline-block;
-    margin: 0 20% 0 10%;
-    width: 28%;
+    width: 25%;
     transition: 0.5s;
 }
 
 section#memb_showcase > div > img:hover {
     transition: 0.5s;
-    width: 30%;
+    width: 27%;
+}
+
+section#memb_showcase > div.left > img {
+    margin: 0 15% 0 20%;
+}
+
+section#memb_showcase > div.right > #text {
+    margin: 0 15% 0 20%;
 }
 
 section#memb_showcase > div > #text {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 5em;
+    top: 7em;
 }
 
 section#memb_showcase > div > #text > h4  {
     font-size: 200%;
     color: rgb(95, 126, 126);
     font-family: Arial, sans-serif;
-    margin-top: 10%;
-    margin-bottom: 10%;
     display: inline-block;
+    margin-bottom: 2rem;
 }
 
 section#memb_showcase > div > #text > h4 > span {
@@ -171,4 +177,33 @@ section#memb_showcase > div > #text > p {
 section#memb_showcase > div > #text > p > span {
     color: rgb(141, 79, 89);
     margin-left: 20px;;
+}
+
+section#albums {
+    margin-top: 40px;
+}
+
+#album_img {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#album_img > a {
+    display: inline-block;
+}
+
+
+#album_img > a > img {
+    transition: 0.5s;
+    width: 15rem;
+    margin: 0 5px 0 5px;
+}
+
+#album_img > a > img:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+    filter: brightness(50%);
 }
