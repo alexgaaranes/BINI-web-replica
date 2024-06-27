@@ -324,7 +324,7 @@ footer > div {
     justify-content: center
 }
 
-#footer_content > *, * > strong, *  > a {
+#footer_content > *, #footer_content > * > strong, #footer_content > *  > a {
     font-family: Arial, sans-serif;
     margin: 10px auto 10px auto;
 }
