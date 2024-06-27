@@ -22,9 +22,21 @@ header {
     z-index: 1;
 }
 
-header > #logo {
+header > div {
+    display: flex;
+    flex-direction: row;
+}
+
+header > div > #logo {
     width: 7em;
-    position: absolute;
+}
+
+header > div > #page_nav > a {
+    text-decoration: none;
+}
+
+header > div > #socials > a > img {
+    width: 2rem;
 }
 
 section#group {
@@ -151,7 +163,7 @@ section#memb_showcase > div.right > img {
 }
 
 section#memb_showcase > div.right > #text {
-    margin: 0 15% 0 25%;
+    margin: 0 10% 0 25%;
 }
 
 section#memb_showcase > div > #text {
