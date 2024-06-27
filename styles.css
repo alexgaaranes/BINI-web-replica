@@ -25,17 +25,47 @@ header {
 header > div {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-header > div > #logo {
+header > div > a {
+    margin: 0 auto 0 20px;
+}
+
+header > div > a > #logo {
     width: 7em;
+}   
+
+/* header > div > * {
+    border: 2px solid aqua;
+} */
+
+header > div > nav > ul > li{
+    display: inline;
 }
 
-header > div > #page_nav > a {
+header > div > nav#page_nav {
+    position: absolute;
+    margin: 0 auto 0 auto;
+}
+
+header > div > nav#page_nav > ul > li >a {
+    margin: 1rem;
+    color: rgb(255, 240, 243);
+    font-family: Arial, sans-serif;
     text-decoration: none;
 }
 
-header > div > #socials > a > img {
+header > div > nav#socials {
+    margin: 0 20px 0 auto;
+}
+
+header > div > nav#socials > ul> li > a {
+    margin: 0.5rem;
+}
+
+header > div > nav#socials > ul> li > a > img {
     width: 2rem;
 }
 
@@ -48,7 +78,7 @@ section#group {
 #group_img {
     transition: 0.5s;
     background-color: rgb(237, 161, 174);
-    width: 60%;
+    width: 40%;
     display: block;
     margin: auto;
     border-radius: 40px;
@@ -56,7 +86,7 @@ section#group {
 
 #group_img:hover {
     transition: 0.5s;
-    width: 65%;
+    width: 42%;
 }
 
 #group_desc {
@@ -90,6 +120,7 @@ hr {
 }
 
 section#members {
+    width: 100%;
     background-color: rgb(251, 216, 221);
     border: 1px solid rgb(237, 163, 175);
     position: relative;
@@ -107,6 +138,7 @@ section#members {
 }
 
 #nav_memb > a {
+    font-family: Arial, sans-serif;
     transition: 0.5s;
     color: rgb(157, 102, 111);
     text-decoration: none;
@@ -201,7 +233,7 @@ section#memb_showcase > div > #text > p > span {
 
 section#albums {
     margin-top: 40px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 #album_img {
@@ -230,7 +262,7 @@ section#albums {
 }
 
 section#top_songs {
-
+    margin-bottom: 60px;
 }
 
 section#top_songs > h2 {
@@ -251,4 +283,57 @@ section#top_songs > .top_songs > iframe {
 section#top_songs > .top_songs > iframe:hover {
     transition: 0.5s;
     transform: scale(1.05);
+}
+
+section#videos {
+    margin-bottom: 100px;
+}
+
+section#videos > h2 {
+    margin-bottom: 40px;
+}
+
+section#videos > .videos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#videos > .videos > iframe {
+    margin: 0 10px 0 10px;
+    transition: 0.5s;
+}
+
+section#videos > .videos > iframe:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(136, 85, 93, 0.329);
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center
+}
+
+#footer_content > *, * > strong, *  > a {
+    font-family: Arial, sans-serif;
+    margin: 10px auto 10px auto;
+}
+
+#footer_content > * > a {
+    color: rgb(179, 5, 34);
+    text-decoration: none;
+}
+
+#footer_content > * > strong {
+    font-size: 120%;
 }
